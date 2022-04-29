@@ -27,7 +27,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        run: echo "next_version=$(./nxtversion.sh)" >> $GITHUB_ENV
+        run: echo "next_version='$(./nxtversion.sh)'" >> $GITHUB_ENV
 
       - name: Create a new tag
         if: env.next_version
