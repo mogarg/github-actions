@@ -31,4 +31,4 @@ jobs:
 
       - name: Create a new tag
         if: env.next_version
-        run: git tag "$env.next_version"
+        run: git tag "${{env.next_version}}"
