@@ -7,4 +7,4 @@ version=$(echo $last_tag | cut -d "." -f1,2)
 patch=`expr $patch + 1`
 next_version="$version.$patch"
 
-echo $next_version
+echo "$next_version"
